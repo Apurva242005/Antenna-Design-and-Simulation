@@ -56,7 +56,7 @@ The project report also specifies the modeled patch dimensions as approximately 
 
 ## Antenna Structure
 
-The HFSS model consists of the following components:
+The HFSS model consists of:
 
 * **Radiating Patch** – rectangular copper patch responsible for electromagnetic radiation.
 * **Feedline** – used to excite the patch.
@@ -66,7 +66,9 @@ The HFSS model consists of the following components:
 
 ### Antenna Model
 
-<img src="diagrams/antenna-structure.png" width="500">
+<p align="center">
+  <img src="diagrams/antenna-structure.png" width="350">
+</p>
 
 ---
 
