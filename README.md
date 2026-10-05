@@ -56,8 +56,6 @@ The project report also specifies the modeled patch dimensions as approximately 
 
 ## Antenna Design
 
-The antenna was designed using standard microstrip patch antenna equations and modeled in ANSYS HFSS.
-
 ### Design Approach
 
 <p align="center">
@@ -70,13 +68,21 @@ The antenna was designed using standard microstrip patch antenna equations and m
   <img src="diagrams/hfss-3d-antenna-model.png" width="500">
 </p>
 
-The HFSS model consists of:
+---
+
+## Antenna Structure
+
+The HFSS model consists of the following main elements:
 
 * **Radiating Patch** – rectangular copper patch responsible for electromagnetic radiation.
 * **Feedline** – used to excite the patch.
 * **Ground Plane** – conductive layer below the substrate.
 * **FR4 Substrate** – dielectric material with a relative permittivity of 4.4.
 * **Radiation Box** – simulation region representing the surrounding open space.
+
+<p align="center">
+  <img src="diagrams/antenna-structure.png" width="500">
+</p>
 
 ---
 
@@ -186,8 +192,9 @@ Antenna-Design-and-Simulation/
 ├── README.md
 │
 ├── diagrams/
-│   ├── hfss-3d-antenna-model.png
-│   └── antenna-design-approach.png
+│   ├── antenna-structure.png
+│   ├── antenna-design-approach.png
+│   └── hfss-3d-antenna-model.png
 │
 └── results/
     ├── return-loss-s11.png
