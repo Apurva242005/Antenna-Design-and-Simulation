@@ -54,7 +54,21 @@ The project report also specifies the modeled patch dimensions as approximately 
 
 ---
 
-## Antenna Structure
+## Antenna Design
+
+The antenna was designed using standard microstrip patch antenna equations and modeled in ANSYS HFSS.
+
+### Design Approach
+
+<p align="center">
+  <img src="diagrams/antenna-design-approach.png" width="500">
+</p>
+
+### HFSS 3D Model
+
+<p align="center">
+  <img src="diagrams/hfss-3d-antenna-model.png" width="500">
+</p>
 
 The HFSS model consists of:
 
@@ -63,12 +77,6 @@ The HFSS model consists of:
 * **Ground Plane** – conductive layer below the substrate.
 * **FR4 Substrate** – dielectric material with a relative permittivity of 4.4.
 * **Radiation Box** – simulation region representing the surrounding open space.
-
-### Antenna Model
-
-<p align="center">
-  <img src="diagrams/antenna-structure.png" width="350">
-</p>
 
 ---
 
@@ -95,9 +103,9 @@ The effective patch length was calculated as **31.37 mm**. After accounting for 
 
 ### 4. HFSS Modeling and Simulation
 
-The antenna structure was modeled in **ANSYS HFSS 2024** with the calculated dimensions and material properties.
+The antenna structure was modeled in **ANSYS HFSS 2024** using the calculated dimensions and material properties.
 
-The model was then simulated over the selected frequency range to evaluate its electromagnetic performance, including return loss, impedance matching, VSWR, and radiation characteristics.
+The model was simulated over the selected frequency range to evaluate return loss, impedance matching, VSWR, and radiation characteristics.
 
 ---
 
@@ -110,8 +118,6 @@ The simulated S-parameter response shows resonance at approximately **2.382 GHz*
 The minimum return loss obtained was:
 
 **S11 = -20.6675 dB**
-
-The result indicates good impedance matching at the resonant frequency and relatively low reflected power.
 
 ![Return Loss](results/return-loss-s11.png)
 
@@ -168,7 +174,7 @@ Microstrip patch antennas are commonly used in wireless and RF communication sys
 * Bluetooth systems
 * Satellite communication
 * Radar systems
-* 5G and IoT-based wireless devices
+* Wireless communication devices
 
 ---
 
@@ -179,13 +185,14 @@ Antenna-Design-and-Simulation/
 │
 ├── README.md
 │
-├── results/
-│   ├── return-loss-s11.png
-│   ├── smith-chart.png
-│   └── radiation-pattern.png
+├── diagrams/
+│   ├── hfss-3d-antenna-model.png
+│   └── antenna-design-approach.png
 │
-└── diagrams/
-    └── antenna-structure.png
+└── results/
+    ├── return-loss-s11.png
+    ├── smith-chart.png
+    └── radiation-pattern.png
 ```
 
 ---
@@ -197,6 +204,7 @@ Antenna-Design-and-Simulation/
 **Nisha Bagal**
 
 **Guide:** Prof. Dr. Shital Pawar
+
 **Vishwakarma Institute of Technology, Pune**
 
 ---
